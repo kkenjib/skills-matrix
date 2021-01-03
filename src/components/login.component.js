@@ -58,7 +58,7 @@ const Login = () => {
   if (user.token === 'Accepted') {
     return (
       <div>
-        <Redirect to="/" />
+        <Redirect to="/skills-matrix" />
         {/* <div>{user.username} is logged in</div>
         <button onClick={handleLogout}>logout</button> */}
       </div>

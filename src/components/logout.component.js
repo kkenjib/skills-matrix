@@ -6,7 +6,7 @@ export default function Logout() {
     sessionStorage.clear()
     return (
         <div>
-            <Redirect to="/" />
+            <Redirect to="/skills-matrix/" />
         </div>
     )
 }

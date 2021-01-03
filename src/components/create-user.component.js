@@ -73,7 +73,7 @@ export default class CreateUser extends Component {
         if (this.state.submitted === 'y') {
             return (
                 <div>
-                    <Redirect to="/" />
+                    <Redirect to="/skills-matrix/" />
                 </div>
             )
         } else{

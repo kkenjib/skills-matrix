@@ -8,7 +8,6 @@ import CreateCourse from "./components/create-course.component";
 import CreateUser from "./components/create-user.component";
 import Login from "./components/login.component";
 import Logout from "./components/logout.component";
-import LogoutButton from "./components/logout-button.component";
 import CreateLog from "./components/create-log.component";
 import LoggedUser from "./components/logged-user";
 
@@ -18,16 +17,15 @@ function NewApp () {
         <Router>
             <div className="container">
                 <PublicNavbar />
-                {/* <LogoutButton /> */}
                 <LoggedUser id={sessionStorage.getItem("user")}/>
                 <br></br>
-                <Route path="/" exact component={CourseList} />
-                <Route path="/edit/:id" component={EditCourse} />
-                <Route path="/course" component={CreateCourse} />
-                <Route path="/user" component={CreateUser} />
-                <Route path="/login" component={Login} />
-                <Route path="/logout" component={Logout} />
-                <Route path="/timelog" component={CreateLog} />
+                <Route path="/skills-matrix/" exact component={CourseList} />
+                <Route path="/skills-matrix/edit/:id" component={EditCourse} />
+                <Route path="/skills-matrix/course" component={CreateCourse} />
+                <Route path="/skills-matrix/user" component={CreateUser} />
+                <Route path="/skills-matrix/login" component={Login} />
+                <Route path="/skills-matrix/logout" component={Logout} />
+                <Route path="/skills-matrix/timelog" component={CreateLog} />
             </div>
         </Router>
     );

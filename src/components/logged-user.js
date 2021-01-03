@@ -5,12 +5,12 @@ export default function LoggedUser(props) {
     console.log(props.id)
     if (props.id) {
         return(
-            <Link to="/logout">Logout</Link>
+            <Link to="/skills-matrix/logout">Logout</Link>
         )
     }
     else {
         return(
-            <Link to="/login">Login</Link>
+            <Link to="/skills-matrix/login">Login</Link>
         )
     }
     // return (
