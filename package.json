@@ -2,7 +2,7 @@
   "name": "skills-matrix",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kkenjib.github.io/",
+  "homepage": "https://kkenjib.github.io/skills-matrix/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
