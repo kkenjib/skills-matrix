@@ -17,7 +17,7 @@ export default function BoxInst (props) {
             <div>
                 Course: {course}
                 <Link to={{
-                    pathname: "/timelog",
+                    pathname: "/skills-matrix/timelog",
                     pathProps: {
                         pathUser: user,
                         pathCat: props.cat,
