@@ -54,7 +54,7 @@ export default class CreateUser extends Component {
         };  
         
         console.log(newUser);
-        axios.post('http://localhost:8000/login/create', newUser)
+        axios.post('https://kkenjib-skills-matrix.herokuapp.com/login/create', newUser)
             .then(res => console.log(res.data))
             .catch(error=>{
                 console.log(error)

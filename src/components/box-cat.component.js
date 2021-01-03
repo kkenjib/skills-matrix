@@ -8,7 +8,7 @@ export default function BoxCat (props) {
     let user = sessionStorage.getItem('user');
     useEffect(() => {
         user = sessionStorage.getItem('user');
-        axios.get('http://localhost:8000/courses/box/' + user + '/' + props.box + '/' + props.cat)
+        axios.get('https://kkenjib-skills-matrix.herokuapp.com/courses/box/' + user + '/' + props.box + '/' + props.cat)
             .then(response => setCourses(response.data));
     }, []);
     if (expanded) {

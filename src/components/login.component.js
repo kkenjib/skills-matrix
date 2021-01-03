@@ -12,7 +12,7 @@ const Login = () => {
     const user = { username, password };
     // send the username and password to the server
     const response = await axios.post(
-        'http://localhost:8000/login',
+        'https://kkenjib-skills-matrix.herokuapp.com/login',
       user
     );
   if (JSON.parse(JSON.stringify(response.data)).token === 'Accepted') { 

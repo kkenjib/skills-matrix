@@ -66,9 +66,9 @@ export default class CreateCourse extends Component {
             user: user,
         };
         
-        console.log('http://localhost:8000/courses/add/' + user);
+        console.log('https://kkenjib-skills-matrix.herokuapp.com/courses/add/' + user);
         console.log(newCourse);
-        axios.post('http://localhost:8000/courses/add/' + user, newCourse)
+        axios.post('https://kkenjib-skills-matrix.herokuapp.com/courses/add/' + user, newCourse)
             .then(res => console.log(res.data));
         
         this.setState({

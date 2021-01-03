@@ -23,7 +23,7 @@ export default function CreateLog(props) {
         const formData = {user,date,minutes,progress,category,provider,institution,course};
         // send the username and password to the server
         await axios.post(
-            'http://localhost:8000/timelog/add',
+            'https://kkenjib-skills-matrix.herokuapp.com/timelog/add',
             formData
         );
         setSubmitted("y")

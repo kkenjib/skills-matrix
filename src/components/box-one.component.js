@@ -9,7 +9,7 @@ export default function BoxOne (props) {
 
     useEffect(() => {
         user = sessionStorage.getItem('user');
-        axios.get('https://kkenji-skills-matrix.herokuapp.com/courses/box/' + user + '/' + props.box)
+        axios.get('https://kkenjib-skills-matrix.herokuapp.com/courses/box/' + user + '/' + props.box)
             .then(response => setCourses(response.data));
     }, []);
 
