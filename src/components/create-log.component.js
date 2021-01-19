@@ -30,7 +30,7 @@ export default function CreateLog(props) {
     }
     if (submitted==="y") {
         return (
-            <Redirect to="/" />
+            <Redirect to="/skills-matrix" />
         )
     }
     else {

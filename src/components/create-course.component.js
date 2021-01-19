@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import {Redirect} from 'react-router-dom';
 
 export default class CreateCourse extends Component {
     constructor(props) {
@@ -17,7 +18,8 @@ export default class CreateCourse extends Component {
             provider: "",
             institution: "",
             category: "",
-            box: "1"
+            box: "1",
+            submitted: ""
         }
     }
 
@@ -76,11 +78,19 @@ export default class CreateCourse extends Component {
             provider: "",
             institution: "",
             category: "",
-            box: ""
+            box: "",
+            submitted: "y"
         })
     }
 
     render() {
+        if (this.state.submitted === 'y') {
+            return (
+                <div>
+                    <Redirect to="/skills-matrix/" />
+                </div>
+            )
+        } else{
         return (
             <div>
             <center>
@@ -149,5 +159,6 @@ export default class CreateCourse extends Component {
             </center>
             </div>
         )
+        }
     }
 }

@@ -9,21 +9,21 @@ export default function CourseList () {
                 <tbody>
                 <tr>
                     <td style={{border:"1px solid black"}}>
-                        <center><strong>Skills You Know</strong></center>
+                        <center><strong>1. Skills You Know</strong></center>
                         <center><BoxOne box="1"/></center>
                     </td>
                     <td style={{border:"1px solid black"}}>
-                        <center><strong>Skills Your Job Requires</strong></center>
+                        <center><strong>2. Skills Your Job Requires</strong></center>
                         <center><BoxOne box="2"/></center>
                     </td>
                 </tr>
                 <tr>
                     <td style={{border:"1px solid black"}}>
-                        <center><strong>Skills You Want To Learn</strong></center>
+                        <center><strong>3. Skills You Want To Learn</strong></center>
                         <center><BoxOne box="3"/></center>
                     </td>
                     <td style={{border:"1px solid black"}}>
-                        <center><strong>Skills You Want For Your Career</strong></center>
+                        <center><strong>4. Skills You Want For Your Career</strong></center>
                         <center><BoxOne box="4"/></center>
                     </td>
                 </tr>
